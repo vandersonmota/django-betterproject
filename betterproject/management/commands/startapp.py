@@ -1,8 +1,8 @@
 import os
-import src
+import betterproject
 
 def app_copy_helper(*args, **kwargs):
-    from src.management.base import copy_helper
+    from betterproject.management.base import copy_helper
 
     import ipdb; ipdb.set_trace()
     kwargs['template_dir'] = os.path.join(src.__path__[0], 'conf', 'app_template')
