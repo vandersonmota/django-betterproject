@@ -4,7 +4,7 @@ import betterproject
 def app_copy_helper(*args, **kwargs):
     from betterproject.management.base import copy_helper
 
-    kwargs['template_dir'] = os.path.join(src.__path__[0], 'conf', 'app_template')
+    kwargs['template_dir'] = os.path.join(betterproject.__path__[0], 'conf', 'app_template')
     copy_helper(*args, **kwargs)
 
 # replace django's default copy_helper with ours
